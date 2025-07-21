@@ -1,0 +1,125 @@
+.header {
+    border: 0px solid;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0px 25px;
+}
+
+.head-logo {
+    color: var(--white);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li {
+    padding: 5px 10px;
+    margin: 5px auto;
+}
+
+.navbar li.active {
+    /* background-color: var(--hover); */
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+}
+
+.navbar li:hover {
+    background-color: var(--hover);
+    border: 1px solid var(--border);
+}
+
+.navbar li a {
+    color: var(--white);
+}
+
+
+.under-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.under-header form{
+    border: 1px solid var(--border);
+    padding: 0px 0px 0px 5px;
+    background-color: var(--white);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.under-header form input{
+    border: 0px solid;
+    padding: 0 10px;
+    width: 25vw;
+    font-size: 16px;
+    height: 5vh;
+    outline: none;
+    border-color: var(--bord);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    position: relative;
+    background-color: var(--button2);
+    font-size: 17px;
+    color: var(--white);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+}  
+
+.btn:after {
+  content: "";
+  background: #f1f1f1;
+  color: var(--button2);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 45px;
+    
+}
+
+.icons li {
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.icons li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.icons li a:hover {
+    color: var(--button2);
+}
