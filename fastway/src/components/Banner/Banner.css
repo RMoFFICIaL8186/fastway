@@ -1,3 +1,148 @@
-.Banner-section {
-    border: 1px solid;
+/* Banner.css */
+.banner-container {
+  border: 0px solid;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.banner-section {
+  position: relative;
+  width: 100%;
+}
+
+.banner-slide {
+  border: 1px solid var(--border);
+  position: relative;
+  padding: 20px;
+  height: 60vh;
+  max-height: 600px;
+  min-height: 300px;
+}
+
+/* .banner-slide img {
+  width: 100vw;
+  height: 100%;
+  object-fit: contain;
+  /* aspect-ratio: 3/2; 
+} */
+.banner-image {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  background-color: rgb(228, 228, 225);
+}
+
+.banner-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.banner-caption h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.banner-caption p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner-button {
+  padding: 10px 25px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+/* Slick slider dots customization */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6b6b;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .banner-slide {
+    height: 50vh;
+  }
+  
+  .banner-caption h2 {
+    font-size: 2rem;
+  }
+  
+  .banner-caption p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-slide {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .banner-caption {
+    left: 5%;
+    max-width: 90%;
+  }
+  
+  .banner-caption h2 {
+    font-size: 1.5rem;
+  }
+  
+  .banner-caption p {
+    font-size: 0.9rem;
+  }
+  
+  .banner-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-slide {
+    height: 35vh;
+    min-height: 250px;
+  }
+  
+  .banner-caption h2 {
+    font-size: 1.3rem;
+  }
+  
+  .banner-caption p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
 }

@@ -1,0 +1,25 @@
+ .Register-container {
+    border: 0px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(176, 185, 193, 0.641);
+}
+
+/* .form-title{
+    color: var(--white);
+} */
+.btn-form {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background-color: var(--hover);
+    color: var(--white);
+}
+
+.btn-form:hover {
+    background-color: var(--button2);
+    transition: 0.3s linear;
+}
