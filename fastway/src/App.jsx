@@ -21,6 +21,11 @@ import ProductPolicy from './Pages/Footer-link-pages/policy/ProductPolicy/Produc
 import Complaint from './Pages/Footer-link-pages/Grievance/Complaint/Complaint';
 import Login from './Pages/Authentication/Login/Login';
 import Register from './Pages/Authentication/Register/Register';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import QAs from './Pages/Footer-link-pages/Services/FA&Q/QAs';
+
+// import Button from 'react-bootstrap/Button';
 
 
 function App() {
@@ -50,8 +55,8 @@ function App() {
   {/* service */}
   <Route path= '/Orders' element={ < Orders />} />
   <Route path= '/Payments' element={ < Payments/> } />
-  {/* // <Route path= '/' element={ < /> } />
-  // <Route path= '/FA&Q' element={ < FA&@/> } /> */}
+  {/* // <Route path= '/' element={ < /> } /> */}
+  <Route path= '/FA&Q' element={ < QAs/> } /> 
 
   {/* Policy's */}
   <Route path= '/CompanyPolicy' element={ <Company /> } />

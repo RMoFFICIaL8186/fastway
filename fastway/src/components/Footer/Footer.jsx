@@ -27,9 +27,9 @@ const Footer = () => {
             <li> <Link to={'/Orders'}>Orders</Link> </li>
             <li> <Link to={'/Payments'}>Payment</Link> </li>
             {/* <li> <Link to={'/Blog'}>Blog</Link> </li>
-            <li> <Link to={'/Career'}>Career</Link> </li>
-            <li> <Link to={'/Login'}>Login</Link> </li>
-            <li> <Link to={'/Register'}>FA&Q</Link> </li> */}
+            <li> <Link to={'/'}>Career</Link> </li>
+            <li> <Link to={'/'}>Login</Link> </li>*/}
+            <li> <Link to={'/FA&Q'}>FA&Q</Link> </li> 
         </ul>
       </div>
 
