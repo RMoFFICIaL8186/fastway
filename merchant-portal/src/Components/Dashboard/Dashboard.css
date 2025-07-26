@@ -1,0 +1,29 @@
+.dashboard-card {
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-card h6 {
+    font-size: 1.2rem !important;
+  }
+  
+  .dashboard-card p {
+    font-size: 1.5rem !important;
+  }
+}
