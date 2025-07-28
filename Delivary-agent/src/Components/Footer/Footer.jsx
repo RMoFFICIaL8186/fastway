@@ -3,35 +3,46 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='d-flex align-items-center justify-content-center bg-primary py-2'>
-        <div className=''>
-      <p className='fs-4 fw-bold text-secondary'>All Copy Right Reserved By <Link to={'/About'}><span className='text-white px-2 fs-5'>BlackWorld</span></Link>-2025</p>
-      <div className=''>
-        <ul className='d-flex align-items-center justify-content-center'>
-            <li className='list-group-item text-white p-1 px-3 bg-primary'>
-                <Link to={'/FA&Q'} className='text-white nav-link'>FA&Q</Link>
+    <div className='bg-primary py-4'>
+      <div className='container'>
+        {/* Copyright section */}
+        <div className='text-center mb-3'>
+          <p className='fs-5 fw-bold text-secondary m-0'>
+            All Copy Right Reserved By 
+            <Link to={'/About'} className='text-white px-2 text-decoration-none'>
+              BlackWorld
+            </Link>
+            -2025
+          </p>
+        </div>
+
+        {/* Links section */}
+        <div className='d-flex justify-content-center'>
+          <ul className='nav flex-column flex-md-row align-items-center'>
+            <li className='nav-item'>
+              <Link to={'/FA&Q'} className='nav-link text-white px-3 py-1 py-md-0'>FA&Q</Link>
             </li>
 
-            <li className='list-group-item text-white p-1 px-3 bg-primary'>
-                <Link to={'/Register'} className='text-white nav-link'>Register</Link>
+            <li className='nav-item'>
+              <Link to={'/Register'} className='nav-link text-white px-3 py-1 py-md-0'>Register</Link>
             </li>
 
-               <li className='list-group-item text-white p-1 px-3 bg-primary'>
-                <Link to={'/Login'} className='text-white nav-link'>Login</Link>
+            <li className='nav-item'>
+              <Link to={'/Login'} className='nav-link text-white px-3 py-1 py-md-0'>Login</Link>
             </li>
 
-               <li className='list-group-item text-white p-1 px-3 bg-primary'>
-                <Link to={'/Admin'} className='text-white nav-link'>Admin-Login</Link>
+            <li className='nav-item'>
+              <Link to={'/Admin'} className='nav-link text-white px-3 py-1 py-md-0'>Admin-Login</Link>
             </li>
 
-               <li className='list-group-item text-white p-1 px-3 bg-primary'>
-                <Link to={'/News'} className='text-white nav-link'>News</Link>
+            <li className='nav-item'>
+              <Link to={'/News'} className='nav-link text-white px-3 py-1 py-md-0'>News</Link>
             </li>
-        </ul>
-      </div>
+          </ul>
+        </div>
       </div>
     </div>
   )
 }
 
-export default Footer
+export default Footer;

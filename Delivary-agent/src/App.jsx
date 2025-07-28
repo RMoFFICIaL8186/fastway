@@ -15,6 +15,7 @@ import Login from './Pages/Footer-section/Authentication/Login';
 import Register from './Pages/Footer-section/Authentication/Register';
 import Admin from './Pages/Footer-section/Authentication/Admin';
 import News from './Pages/Footer-section/News/News';
+import './styles/main.scss';
 
 function App() {
 

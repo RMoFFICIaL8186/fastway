@@ -1,0 +1,28 @@
+.font-Monsieur {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.font-Poppins{
+ font-family: "Poppins", sans-serif; 
+} 
+
+.font-Playfair {
+   font-family: "Playfair Display", serif; 
+}
+
+.font-Dancing {
+    font-family: "Dancing Script", cursive;
+}
+
+.font-Roboto{
+      font-family: "Roboto", sans-serif;
+      font-size: 35px;
+      text-decoration: underline;
+}
+
+.font-Bonheur{
+     font-family: "Bonheur Royale", cursive;
+}
+  
