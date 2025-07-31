@@ -1,3 +1,8 @@
+
+.w100-h100 {
+  width: 100vw;
+  height: 100vh;
+}
 .dashboard-card {
   border-radius: 8px;
   transition: transform 0.2s, box-shadow 0.2s;

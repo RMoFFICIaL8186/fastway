@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <span className='text-white m-4 p-3'>Hello, </span>
+          <span className='text-white m-4 p-3'>Hello, Khan</span>
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to={'/'}>Home</Link>
           </li>
@@ -38,16 +38,20 @@ const Navbar = () => {
             <Link className="nav-link" to={'/Register'}>Register</Link>
           </li>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
+            <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              DashBoard
+            </Link>
             <ul className="dropdown-menu dropdown-menu-dark">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><Link className="dropdown-item" to={'/Orders'}>Orders</Link></li>
+              <li><Link className="dropdown-item" to={'/Dispatch'}>Dispatches</Link></li>
+              <li><Link className="dropdown-item" to={'/Payments'}>Payments</Link></li>
+              <li><Link className="dropdown-item" to={'/Menu'}>Menu Items</Link></li>
+              <li><Link className="dropdown-item" to={'/Earnings'}>Earnings</Link></li>
+              <li><Link className="dropdown-item" to={'/Staff'}>Staff</Link></li>
               <li>
                 <hr className="dropdown-divider"/>
               </li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+              <li><Link className="dropdown-item" to={''}>setting</Link></li>
             </ul>
           </li>
         </ul>

@@ -1,0 +1,31 @@
+/* Add these styles to your orders.css file */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.badge {
+    font-size: 0.85em;
+    padding: 0.35em 0.65em;
+}
+
+@media (max-width: 768px) {
+    .table-section {
+        padding: 0 10px;
+    }
+
+    .table td,
+    .table th {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}

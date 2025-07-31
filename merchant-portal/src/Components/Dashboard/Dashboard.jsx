@@ -18,7 +18,7 @@ const Dashboard = () => {
 
   // Updated card component with proper Link
   const DashboardCard = ({ title, value, action, path }) => (
-    <div className='border p-3 text-center dashboard-card'>
+    <div className='border p-3 text-center dashboard-card '>
       <h6 className='fs-4 fw-bold'>{title}</h6>
       <p className='fs-3 my-2'>{value}</p>
       <Link to={path} className='btn btn-primary text-white text-decoration-none'>
@@ -28,7 +28,7 @@ const Dashboard = () => {
   );
 
   return (
-    <div className='container-fluid p-3'>
+    <div className='container-fluid p-3 w100-h100'>
       <h4 className='mb-4'>Dashboard</h4>
       
       {/* Top row of cards */}
